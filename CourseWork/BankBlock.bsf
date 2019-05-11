@@ -1,0 +1,253 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 320 560)
+	(text "BankBlock" (rect 5 0 64 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 528 25 540)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Clock" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 27 51 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input[8..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "Input[8..0]" (rect 21 43 76 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Write1" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Write1" (rect 21 59 57 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Offset[1..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "Offset[1..0]" (rect 21 75 85 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "FirstWord" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "FirstWord" (rect 21 91 76 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "FirstWordUpdateFirstRow" (rect 0 0 147 14)(font "Arial" (font_size 8)))
+		(text "FirstWordUpdateFirstRow" (rect 21 107 168 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "SecondWord" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "SecondWord" (rect 21 123 95 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "SecondWordUpdateFirstRow" (rect 0 0 166 14)(font "Arial" (font_size 8)))
+		(text "SecondWordUpdateFirstRow" (rect 21 139 187 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "Hit1" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "Hit1" (rect 21 155 42 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "ThirdWord" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "ThirdWord" (rect 21 171 80 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "ThirdWordUpdateFirstRow" (rect 0 0 151 14)(font "Arial" (font_size 8)))
+		(text "ThirdWordUpdateFirstRow" (rect 21 187 172 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "FourthWord" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "FourthWord" (rect 21 203 88 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "FourthWordUpdateFirstRow" (rect 0 0 159 14)(font "Arial" (font_size 8)))
+		(text "FourthWordUpdateFirstRow" (rect 21 219 180 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "Write2" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Write2" (rect 21 235 57 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "FirstWordUpdateFSecondRow" (rect 0 0 173 14)(font "Arial" (font_size 8)))
+		(text "FirstWordUpdateFSecondRow" (rect 21 251 194 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "SecondWordUpdateSecondRow" (rect 0 0 185 14)(font "Arial" (font_size 8)))
+		(text "SecondWordUpdateSecondRow" (rect 21 267 206 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "Hit2" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "Hit2" (rect 21 283 42 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "ThridWordUpdateSecondRow" (rect 0 0 169 14)(font "Arial" (font_size 8)))
+		(text "ThridWordUpdateSecondRow" (rect 21 299 190 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "FourthWordUpdateSecondRow" (rect 0 0 178 14)(font "Arial" (font_size 8)))
+		(text "FourthWordUpdateSecondRow" (rect 21 315 199 329)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320)(line_width 1))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "Write3" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Write3" (rect 21 331 57 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "FirstWordUpdateThirdRow" (rect 0 0 151 14)(font "Arial" (font_size 8)))
+		(text "FirstWordUpdateThirdRow" (rect 21 347 172 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352)(line_width 1))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "SecondWordUpdateThirdRow" (rect 0 0 169 14)(font "Arial" (font_size 8)))
+		(text "SecondWordUpdateThirdRow" (rect 21 363 190 377)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368)(line_width 1))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "Hit3" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "Hit3" (rect 21 379 42 393)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 16 384)(line_width 1))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "ThirdWordUpdateThirdRow" (rect 0 0 154 14)(font "Arial" (font_size 8)))
+		(text "ThirdWordUpdateThirdRow" (rect 21 395 175 409)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 16 400)(line_width 1))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "FourthWordUpdateThirdRow" (rect 0 0 162 14)(font "Arial" (font_size 8)))
+		(text "FourthWordUpdateThirdRow" (rect 21 411 183 425)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 16 416)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "Write4" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Write4" (rect 21 427 57 441)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 16 432)(line_width 1))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "FirstWordUpdateFourthRow" (rect 0 0 159 14)(font "Arial" (font_size 8)))
+		(text "FirstWordUpdateFourthRow" (rect 21 443 180 457)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 16 448)(line_width 1))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "SecondWordUpdateFourthRow" (rect 0 0 178 14)(font "Arial" (font_size 8)))
+		(text "SecondWordUpdateFourthRow" (rect 21 459 199 473)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 16 464)(line_width 1))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "Hit4" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "Hit4" (rect 21 475 42 489)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 16 480)(line_width 1))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "ThirdWordUpdateFourthRow" (rect 0 0 162 14)(font "Arial" (font_size 8)))
+		(text "ThirdWordUpdateFourthRow" (rect 21 491 183 505)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 16 496)(line_width 1))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "FourthWordUpdateFourthRow" (rect 0 0 171 14)(font "Arial" (font_size 8)))
+		(text "FourthWordUpdateFourthRow" (rect 21 507 192 521)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 16 512)(line_width 1))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Output[8..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "Output[8..0]" (rect 217 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 528)(line_width 1))
+	)
+)
