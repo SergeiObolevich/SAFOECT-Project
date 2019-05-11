@@ -5,29 +5,29 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.056 ns
-From           : Write
-To             : lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[7]
+Actual Time    : 3.064 ns
+From           : Tag[6]
+To             : lpm_dff3:inst2|lpm_ff:lpm_ff_component|dffs[6]
 From Clock     : --
-To Clock       : Clock
+To Clock       : RecordTag
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.193 ns
-From           : lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[5]
-To             : Output[5]
-From Clock     : Clock
+Actual Time    : 16.668 ns
+From           : inst42
+To             : Write1
+From Clock     : RecordTag
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.306 ns
-From           : Offset[0]
-To             : Output[0]
+Actual Time    : 9.600 ns
+From           : WriteResult
+To             : UpdateSecondBankThirdWord
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,22 +35,252 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.214 ns
-From           : Input[0]
-To             : lpm_dff1:inst7|lpm_ff:lpm_ff_component|dffs[0]
+Actual Time    : 9.819 ns
+From           : WriteToRow
+To             : inst42
 From Clock     : --
-To Clock       : Clock
+To Clock       : RecordTag
+Failed Paths   : 0
+
+Type           : Clock Setup: 'RecordTag'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 120.93 MHz ( period = 8.269 ns )
+From           : inst28
+To             : lpm_dff3:inst1|lpm_ff:lpm_ff_component|dffs[6]
+From Clock     : RecordTag
+To Clock       : RecordTag
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[3]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 180.93 MHz ( period = 5.527 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[3]
+To Clock       : Tag[3]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[7]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 181.29 MHz ( period = 5.516 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[7]
+To Clock       : Tag[7]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[0]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 194.55 MHz ( period = 5.140 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[0]
+To Clock       : Tag[0]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[1]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 197.98 MHz ( period = 5.051 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[1]
+To Clock       : Tag[1]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[6]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 199.48 MHz ( period = 5.013 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[6]
+To Clock       : Tag[6]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[9]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 199.96 MHz ( period = 5.001 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[9]
+To Clock       : Tag[9]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[8]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 200.64 MHz ( period = 4.984 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[8]
+To Clock       : Tag[8]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[2]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 202.92 MHz ( period = 4.928 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[2]
+To Clock       : Tag[2]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[4]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 202.92 MHz ( period = 4.928 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[4]
+To Clock       : Tag[4]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Tag[5]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 202.92 MHz ( period = 4.928 ns )
+From           : inst28
+To             : inst35
+From Clock     : Tag[5]
+To Clock       : Tag[5]
 Failed Paths   : 0
 
 Type           : Clock Setup: 'Clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : lpm_dff1:inst7|lpm_ff:lpm_ff_component|dffs[0]
-To             : lpm_dff1:inst7|lpm_ff:lpm_ff_component|dffs[0]
+Actual Time    : 422.30 MHz ( period = 2.368 ns )
+From           : inst28
+To             : inst35
 From Clock     : Clock
 To Clock       : Clock
 Failed Paths   : 0
+
+Type           : Clock Hold: 'RecordTag'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : RecordTag
+To Clock       : RecordTag
+Failed Paths   : 91
+
+Type           : Clock Hold: 'Tag[3]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[3]
+To Clock       : Tag[3]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[7]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[7]
+To Clock       : Tag[7]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[4]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[4]
+To Clock       : Tag[4]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[2]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[2]
+To Clock       : Tag[2]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[5]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[5]
+To Clock       : Tag[5]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[1]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[1]
+To Clock       : Tag[1]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[9]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[9]
+To Clock       : Tag[9]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[8]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[8]
+To Clock       : Tag[8]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[6]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[6]
+To Clock       : Tag[6]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Tag[0]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Tag[0]
+To Clock       : Tag[0]
+Failed Paths   : 24
+
+Type           : Clock Hold: 'Clock'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst28
+To             : inst42
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 3
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +290,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 334
 
 --------------------------------------------------------------------------------------
 
