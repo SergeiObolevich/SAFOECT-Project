@@ -5045,11 +5045,11 @@ VECTOR("C:/Users/serge/SAFOECT-Project/CourseWork/LFUWForm.vwf")
 VECTOR("C:/Users/serge/SAFOECT-Project/CourseWork/CacheWForm.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 413258;
+		ZBEGIN = 315200;
+		ZEND = 603800;
 		NUMERATOR = 1245;
 		DENOMINATOR = 413258;
-		TOP_INDEX = 0;
+		TOP_INDEX = 12;
 	}
 	CLOCK{
 		PERIOD = 10000;

@@ -82,8 +82,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 160)
 		(input)
-		(text "Control" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "Control" (rect 21 155 61 169)(font "Arial" (font_size 8)))
+		(text "Checking" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "Checking" (rect 21 155 72 169)(font "Arial" (font_size 8)))
 		(line (pt 0 160)(pt 16 160)(line_width 1))
 	)
 	(port
