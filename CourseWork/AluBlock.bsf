@@ -61,9 +61,16 @@ applicable agreement for further details.
 	(port
 		(pt 176 48)
 		(output)
-		(text "CF" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "CF" (rect 140 43 155 57)(font "Arial" (font_size 8)))
+		(text "ZF" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "ZF" (rect 140 43 155 57)(font "Arial" (font_size 8)))
 		(line (pt 176 48)(pt 160 48)(line_width 1))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "CF" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "CF" (rect 140 59 155 73)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 160 112)(line_width 1))
