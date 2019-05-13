@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat May 11 23:32:27 2019
+Analysis & Synthesis Status : Successful - Mon May 13 06:19:38 2019
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : CourseWork
-Top-level Entity Name : CacheWithMemory
+Top-level Entity Name : TestingBlock
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 448
-    Dedicated logic registers : 453
-Total registers : 453
-Total pins : 63
+    Combinational ALUTs : 651
+    Dedicated logic registers : 606
+Total registers : 606
+Total pins : 123
 Total virtual pins : 0
 Total block memory bits : 221,184
 DSP block 9-bit elements : 0

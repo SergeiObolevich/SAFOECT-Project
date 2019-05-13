@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY CacheWithMemory
+set_global_assignment -name TOP_LEVEL_ENTITY TestingBlock
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:33:20  MARCH 26, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
@@ -93,10 +93,34 @@ set_global_assignment -name QIP_FILE lpm_compare3.qip
 set_global_assignment -name QIP_FILE lpm_compare4.qip
 set_global_assignment -name QIP_FILE lpm_counter3.qip
 set_global_assignment -name BDF_FILE CacheWithMemory.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CacheWForm.vwf
+set_global_assignment -name BDF_FILE ControlUnitBlock.bdf
+set_global_assignment -name QIP_FILE lpm_dff4.qip
+set_global_assignment -name QIP_FILE lpm_counter4.qip
+set_global_assignment -name QIP_FILE lpm_counter5.qip
+set_global_assignment -name QIP_FILE lpm_decode5.qip
+set_global_assignment -name QIP_FILE lpm_decode6.qip
+set_global_assignment -name BDF_FILE HelpBlocks.bdf
+set_global_assignment -name BDF_FILE TestingBlock.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TestingWForm.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE TestingWForm.vwf
+set_global_assignment -name BDF_FILE MoveRegisterAddress.bdf
+set_global_assignment -name QIP_FILE lpm_decode7.qip
+set_global_assignment -name QIP_FILE lpm_bustri3.qip
+set_global_assignment -name BDF_FILE MoveAddressRegister.bdf
+set_global_assignment -name QIP_FILE lpm_decode8.qip
+set_global_assignment -name BDF_FILE MoveRegisterRegister.bdf
+set_global_assignment -name QIP_FILE lpm_decode9.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE CacheWForm.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CacheWForm.vwf
+set_global_assignment -name BDF_FILE Push.bdf
+set_global_assignment -name BDF_FILE Pop.bdf
+set_global_assignment -name QIP_FILE lpm_decode10.qip
+set_global_assignment -name BDF_FILE NotBlock.bdf
+set_global_assignment -name BDF_FILE RorBlock.bdf
+set_global_assignment -name BDF_FILE NxorBlock.bdf
+set_global_assignment -name BDF_FILE SubBlock.bdf
+set_global_assignment -name QIP_FILE lpm_decode11.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

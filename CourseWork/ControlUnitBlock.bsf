@@ -1,0 +1,169 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 280 336)
+	(text "ControlUnitBlock" (rect 5 0 97 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Clock" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 27 51 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Hit" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "Hit" (rect 21 43 35 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WriteResultCPU" (rect 0 0 88 14)(font "Arial" (font_size 8)))
+		(text "WriteResultCPU" (rect 21 59 109 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 264 48)
+		(output)
+		(text "Command[15..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "Command[15..0]" (rect 153 43 243 57)(font "Arial" (font_size 8)))
+		(line (pt 264 48)(pt 248 48)(line_width 3))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "CacheClock" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "CacheClock" (rect 176 59 243 73)(font "Arial" (font_size 8)))
+		(line (pt 264 64)(pt 248 64)(line_width 1))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "ReadCache" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "ReadCache" (rect 177 75 243 89)(font "Arial" (font_size 8)))
+		(line (pt 264 80)(pt 248 80)(line_width 1))
+	)
+	(port
+		(pt 264 96)
+		(output)
+		(text "WriteCache" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "WriteCache" (rect 177 91 243 105)(font "Arial" (font_size 8)))
+		(line (pt 264 96)(pt 248 96)(line_width 1))
+	)
+	(port
+		(pt 264 112)
+		(output)
+		(text "Address[13..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "Address[13..0]" (rect 159 107 243 121)(font "Arial" (font_size 8)))
+		(line (pt 264 112)(pt 248 112)(line_width 3))
+	)
+	(port
+		(pt 264 128)
+		(output)
+		(text "Enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Enable" (rect 206 123 243 137)(font "Arial" (font_size 8)))
+		(line (pt 264 128)(pt 248 128)(line_width 1))
+	)
+	(port
+		(pt 264 144)
+		(output)
+		(text "IR[26..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "IR[26..0]" (rect 197 139 243 153)(font "Arial" (font_size 8)))
+		(line (pt 264 144)(pt 248 144)(line_width 3))
+	)
+	(port
+		(pt 264 160)
+		(output)
+		(text "IP[13..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "IP[13..0]" (rect 199 155 243 169)(font "Arial" (font_size 8)))
+		(line (pt 264 160)(pt 248 160)(line_width 3))
+	)
+	(port
+		(pt 264 176)
+		(output)
+		(text "count[3..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "count[3..0]" (rect 183 171 243 185)(font "Arial" (font_size 8)))
+		(line (pt 264 176)(pt 248 176)(line_width 3))
+	)
+	(port
+		(pt 264 192)
+		(output)
+		(text "RegisterControl[2..0]" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "RegisterControl[2..0]" (rect 128 187 243 201)(font "Arial" (font_size 8)))
+		(line (pt 264 192)(pt 248 192)(line_width 3))
+	)
+	(port
+		(pt 264 208)
+		(output)
+		(text "RegisterAddress[2..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "RegisterAddress[2..0]" (rect 118 203 243 217)(font "Arial" (font_size 8)))
+		(line (pt 264 208)(pt 248 208)(line_width 3))
+	)
+	(port
+		(pt 264 224)
+		(output)
+		(text "StackControl[2..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "StackControl[2..0]" (rect 143 219 243 233)(font "Arial" (font_size 8)))
+		(line (pt 264 224)(pt 248 224)(line_width 3))
+	)
+	(port
+		(pt 264 240)
+		(output)
+		(text "AluControl[2..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "AluControl[2..0]" (rect 156 235 243 249)(font "Arial" (font_size 8)))
+		(line (pt 264 240)(pt 248 240)(line_width 3))
+	)
+	(port
+		(pt 264 256)
+		(output)
+		(text "First[8..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "First[8..0]" (rect 190 251 243 265)(font "Arial" (font_size 8)))
+		(line (pt 264 256)(pt 248 256)(line_width 3))
+	)
+	(port
+		(pt 264 272)
+		(output)
+		(text "Second[8..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "Second[8..0]" (rect 172 267 243 281)(font "Arial" (font_size 8)))
+		(line (pt 264 272)(pt 248 272)(line_width 3))
+	)
+	(port
+		(pt 264 288)
+		(output)
+		(text "Perform" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "Perform" (rect 199 283 243 297)(font "Arial" (font_size 8)))
+		(line (pt 264 288)(pt 248 288)(line_width 1))
+	)
+	(port
+		(pt 264 32)
+		(bidir)
+		(text "Data[8..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "Data[8..0]" (rect 189 27 243 41)(font "Arial" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 304)(line_width 1))
+	)
+)

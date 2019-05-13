@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect -248 48 -80 64)
+	(rect -248 40 -80 56)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "Address[13..0]" (rect 5 0 76 12)(font "Arial" ))
 	(pt 168 8)
@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 688 -8 864 8)
+	(rect 688 -16 864 0)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "Data[8..0]" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 280 72 328 104)
+	(rect 280 64 328 96)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -273,7 +273,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 344 24 504 120)
+	(rect 344 16 504 112)
 	(text "lpm_rom0" (rect 52 1 119 17)(font "Arial" (font_size 10)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -351,7 +351,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 96 32 176 72)
+	(rect 96 24 176 64)
 	(text "lpm_bustri0" (rect 7 1 86 17)(font "Arial" (font_size 10)))
 	(text "inst6" (rect 8 24 31 36)(font "Arial" ))
 	(port
@@ -386,7 +386,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 536 48 616 88)
+	(rect 536 40 616 80)
 	(text "lpm_bustri2" (rect 7 1 86 17)(font "Arial" (font_size 10)))
 	(text "inst23" (rect 8 24 37 36)(font "Arial" ))
 	(port
@@ -418,31 +418,6 @@ applicable agreement for further details.
 		(line (pt 32 32)(pt 32 16)(line_width 1))
 		(line (pt 58 28)(pt 66 20)(line_width 1))
 		(line (pt 10 28)(pt 18 20)(line_width 1))
-	)
-)
-(symbol
-	(rect 96 -16 144 16)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst11" (rect 3 21 32 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16)(line_width 1))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16)(line_width 1))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7)(line_width 1))
-		(line (pt 13 7)(pt 31 16)(line_width 1))
-		(line (pt 13 25)(pt 31 16)(line_width 1))
-		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
 (symbol
@@ -565,39 +540,30 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
 	)
 )
-(connector
-	(pt 328 88)
-	(pt 344 88)
-)
-(connector
-	(pt 264 72)
-	(pt 344 72)
-)
-(connector
-	(pt 264 72)
-	(pt 264 88)
-)
-(connector
-	(pt 136 72)
-	(pt 136 88)
-)
-(connector
-	(pt 80 88)
-	(pt 80 0)
-)
-(connector
-	(pt -48 56)
-	(pt -48 0)
-)
-(connector
-	(text "Address[13]" (rect -38 -16 21 -4)(font "Arial" ))
-	(pt -48 0)
-	(pt 16 0)
-)
-(connector
-	(pt 176 56)
-	(pt 344 56)
-	(bus)
+(symbol
+	(rect 32 64 80 96)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7)(line_width 1))
+		(line (pt 13 7)(pt 31 16)(line_width 1))
+		(line (pt 13 25)(pt 31 16)(line_width 1))
+		(circle (rect 31 12 39 20)(line_width 1))
+	)
 )
 (connector
 	(pt 344 -16)
@@ -608,10 +574,6 @@ applicable agreement for further details.
 	(pt 344 -32)
 )
 (connector
-	(pt 264 -32)
-	(pt 264 -16)
-)
-(connector
 	(pt 328 -80)
 	(pt 344 -80)
 	(bus)
@@ -619,54 +581,6 @@ applicable agreement for further details.
 (connector
 	(pt 200 -48)
 	(pt 344 -48)
-	(bus)
-)
-(connector
-	(pt -64 56)
-	(pt -64 -48)
-	(bus)
-)
-(connector
-	(pt 144 0)
-	(pt 160 0)
-)
-(connector
-	(pt 64 0)
-	(pt 80 0)
-)
-(connector
-	(text "<<__$DEF_ALIAS1342>>" (rect 40 -16 163 -4)(font "Arial" )(invisible))
-	(pt 80 0)
-	(pt 96 0)
-)
-(connector
-	(pt -80 56)
-	(pt -64 56)
-	(bus)
-)
-(connector
-	(pt -64 56)
-	(pt -48 56)
-	(bus)
-)
-(connector
-	(pt -48 56)
-	(pt 96 56)
-	(bus)
-)
-(connector
-	(pt -64 -48)
-	(pt 120 -48)
-	(bus)
-)
-(connector
-	(text "ReadRom" (rect 556 83 568 132)(font "Arial" )(vertical))
-	(pt 576 88)
-	(pt 576 136)
-)
-(connector
-	(pt 504 72)
-	(pt 536 72)
 	(bus)
 )
 (connector
@@ -712,57 +626,14 @@ applicable agreement for further details.
 	(pt 312 -64)
 )
 (connector
-	(pt 672 0)
-	(pt 688 0)
-	(bus)
-)
-(connector
 	(pt 656 -80)
 	(pt 672 -80)
 	(bus)
 )
 (connector
-	(pt 616 72)
-	(pt 672 72)
-	(bus)
-)
-(connector
-	(pt 672 -80)
-	(pt 672 0)
-	(bus)
-)
-(connector
-	(pt 672 0)
-	(pt 672 72)
-	(bus)
-)
-(connector
-	(text "Ram" (rect 144 -30 156 -7)(font "Arial" )(vertical))
+	(text "Ram" (rect 143 -31 155 -8)(font "Arial" )(vertical))
 	(pt 160 0)
 	(pt 160 -32)
-)
-(connector
-	(text "Rom" (rect 106 72 129 84)(font "Arial" ))
-	(pt 136 88)
-	(pt 80 88)
-)
-(connector
-	(text "Clock" (rect 226 72 254 84)(font "Arial" ))
-	(pt 216 88)
-	(pt 264 88)
-)
-(connector
-	(pt 264 88)
-	(pt 280 88)
-)
-(connector
-	(text "Clock" (rect 226 -32 254 -20)(font "Arial" ))
-	(pt 216 -16)
-	(pt 264 -16)
-)
-(connector
-	(pt 264 -16)
-	(pt 280 -16)
 )
 (connector
 	(text "Control[0]" (rect -56 -200 -8 -188)(font "Arial" ))
@@ -848,12 +719,149 @@ applicable agreement for further details.
 	(pt 200 -112)
 	(pt 256 -112)
 )
-(junction (pt -48 56))
-(junction (pt 80 0))
-(junction (pt -64 56))
+(connector
+	(pt 328 80)
+	(pt 344 80)
+)
+(connector
+	(pt 264 64)
+	(pt 344 64)
+)
+(connector
+	(pt -48 0)
+	(pt -48 48)
+)
+(connector
+	(text "Address[13]" (rect -38 -16 21 -4)(font "Arial" ))
+	(pt 16 0)
+	(pt -48 0)
+)
+(connector
+	(pt 176 48)
+	(pt 344 48)
+	(bus)
+)
+(connector
+	(pt -64 -48)
+	(pt -64 48)
+	(bus)
+)
+(connector
+	(pt 120 -48)
+	(pt -64 -48)
+	(bus)
+)
+(connector
+	(pt 504 64)
+	(pt 536 64)
+	(bus)
+)
+(connector
+	(pt 616 64)
+	(pt 672 64)
+	(bus)
+)
+(connector
+	(text "Rom" (rect 106 64 129 76)(font "Arial" ))
+	(pt 136 80)
+	(pt 80 80)
+)
+(connector
+	(pt 32 80)
+	(pt 16 80)
+)
+(connector
+	(pt 16 80)
+	(pt 16 32)
+)
+(connector
+	(pt 16 32)
+	(pt 80 32)
+)
+(connector
+	(pt 80 0)
+	(pt 80 32)
+)
+(connector
+	(pt -80 48)
+	(pt -64 48)
+	(bus)
+)
+(connector
+	(pt -64 48)
+	(pt -48 48)
+	(bus)
+)
+(connector
+	(pt -48 48)
+	(pt 96 48)
+	(bus)
+)
+(connector
+	(pt 64 0)
+	(pt 80 0)
+)
+(connector
+	(text "<<__$DEF_ALIAS1342>>" (rect 40 -16 163 -4)(font "Arial" )(invisible))
+	(pt 80 0)
+	(pt 160 0)
+)
+(connector
+	(pt 136 64)
+	(pt 136 80)
+)
+(connector
+	(text "ReadRom" (rect 556 75 568 124)(font "Arial" )(vertical))
+	(pt 576 80)
+	(pt 576 128)
+)
+(connector
+	(pt 672 -8)
+	(pt 688 -8)
+	(bus)
+)
+(connector
+	(pt 672 -80)
+	(pt 672 -8)
+	(bus)
+)
+(connector
+	(pt 672 -8)
+	(pt 672 64)
+	(bus)
+)
+(connector
+	(pt 264 -32)
+	(pt 264 -16)
+)
+(connector
+	(pt 264 64)
+	(pt 264 80)
+)
+(connector
+	(text "Clock" (rect 226 -32 254 -20)(font "Arial" ))
+	(pt 216 -16)
+	(pt 264 -16)
+)
+(connector
+	(pt 264 -16)
+	(pt 280 -16)
+)
+(connector
+	(text "Clock" (rect 226 64 254 76)(font "Arial" ))
+	(pt 216 80)
+	(pt 264 80)
+)
+(connector
+	(pt 264 80)
+	(pt 280 80)
+)
 (junction (pt 312 -64))
-(junction (pt 672 0))
 (junction (pt 264 -16))
-(junction (pt 264 88))
 (junction (pt -64 -184))
 (junction (pt -64 -144))
+(junction (pt 80 0))
+(junction (pt -64 48))
+(junction (pt -48 48))
+(junction (pt 672 -8))
+(junction (pt 264 80))
