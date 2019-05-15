@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.583 ns
+Actual Time    : -0.111 ns
 From           : Clock
-To             : ControlUnitBlock:inst|inst26
+To             : CPU:inst|ControlUnitBlock:inst|inst30
 From Clock     : --
 To Clock       : Clock
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 34.105 ns
-From           : POHBlock:inst6|lpm_dff0:inst3|lpm_ff:lpm_ff_component|dffs[5]
-To             : Data[5]
+Actual Time    : 39.171 ns
+From           : CPU:inst|POHBlock:inst6|lpm_dff0:inst6|lpm_ff:lpm_ff_component|dffs[7]
+To             : CPU[7]
 From Clock     : Clock
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.669 ns
+Actual Time    : 9.185 ns
 From           : Clock
-To             : CacheClock
+To             : Control[0]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.451 ns
+Actual Time    : 8.765 ns
 From           : Clock
-To             : ControlUnitBlock:inst|inst40
+To             : CPU:inst|ControlUnitBlock:inst|inst40
 From Clock     : --
 To Clock       : Clock
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 20.51 MHz ( period = 48.768 ns )
-From           : POHBlock:inst6|lpm_dff0:inst7|lpm_ff:lpm_ff_component|dffs[7]
-To             : CacheBlock:inst10|BankBlock:inst|RowBlock:inst1|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[7]
+Actual Time    : 17.22 MHz ( period = 58.076 ns )
+From           : CPU:inst|POHBlock:inst6|lpm_dff0:inst6|lpm_ff:lpm_ff_component|dffs[7]
+To             : CPU:inst|CacheBlock:inst10|BankBlock:inst|RowBlock:inst1|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[7]
 From Clock     : Clock
 To Clock       : Clock
 Failed Paths   : 0
@@ -56,8 +56,8 @@ Type           : Clock Hold: 'Clock'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : ControlUnitBlock:inst|lpm_dff0:inst24|lpm_ff:lpm_ff_component|dffs[3]
-To             : POHBlock:inst6|lpm_dff0:inst6|lpm_ff:lpm_ff_component|dffs[3]
+From           : CPU:inst|ControlUnitBlock:inst|lpm_dff0:inst23|lpm_ff:lpm_ff_component|dffs[5]
+To             : CPU:inst|POHBlock:inst6|lpm_dff0:inst6|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : Clock
 To Clock       : Clock
 Failed Paths   : 10000

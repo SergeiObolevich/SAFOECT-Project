@@ -49,7 +49,6 @@ set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
 set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
 set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
 set_global_assignment -name CHECK_OUTPUTS OFF
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE TestingWForm.vwf
 set_global_assignment -name HEX_FILE HexMemory.hex
 set_global_assignment -name BDF_FILE MemoryBlock.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE MemoryWForm.vwf
@@ -100,9 +99,6 @@ set_global_assignment -name QIP_FILE lpm_counter4.qip
 set_global_assignment -name QIP_FILE lpm_counter5.qip
 set_global_assignment -name QIP_FILE lpm_decode5.qip
 set_global_assignment -name QIP_FILE lpm_decode6.qip
-set_global_assignment -name BDF_FILE HelpBlocks.bdf
-set_global_assignment -name BDF_FILE TestingBlock.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE TestingWForm.vwf
 set_global_assignment -name QIP_FILE lpm_compare5.qip
 set_global_assignment -name QIP_FILE lpm_decode7.qip
 set_global_assignment -name QIP_FILE lpm_bustri3.qip
@@ -112,6 +108,7 @@ set_global_assignment -name QIP_FILE lpm_decode10.qip
 set_global_assignment -name QIP_FILE lpm_decode11.qip
 set_global_assignment -name QIP_FILE lpm_decode12.qip
 set_global_assignment -name QIP_FILE lpm_decode13.qip
+set_global_assignment -name BDF_FILE HelpBlocks.bdf
 set_global_assignment -name BDF_FILE ControlUnitBlock.bdf
 set_global_assignment -name BDF_FILE MoveRegisterAddress.bdf
 set_global_assignment -name BDF_FILE MoveAddressRegister.bdf
@@ -128,8 +125,10 @@ set_global_assignment -name BDF_FILE NotRegisterBlock.bdf
 set_global_assignment -name BDF_FILE NxorRegisterBlock.bdf
 set_global_assignment -name BDF_FILE CPU.bdf
 set_global_assignment -name BDF_FILE MainScheme.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MainWForm.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE MainWForm.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

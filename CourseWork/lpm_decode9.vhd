@@ -46,8 +46,8 @@ ENTITY lpm_decode9 IS
 		eq1		: OUT STD_LOGIC ;
 		eq2		: OUT STD_LOGIC ;
 		eq3		: OUT STD_LOGIC ;
-		eq5		: OUT STD_LOGIC ;
-		eq6		: OUT STD_LOGIC 
+		eq7		: OUT STD_LOGIC ;
+		eq8		: OUT STD_LOGIC 
 	);
 END lpm_decode9;
 
@@ -76,16 +76,16 @@ ARCHITECTURE SYN OF lpm_decode9 IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire5    <= sub_wire0(6);
-	sub_wire4    <= sub_wire0(5);
+	sub_wire5    <= sub_wire0(8);
+	sub_wire4    <= sub_wire0(7);
 	sub_wire3    <= sub_wire0(3);
 	sub_wire2    <= sub_wire0(2);
 	sub_wire1    <= sub_wire0(1);
 	eq1    <= sub_wire1;
 	eq2    <= sub_wire2;
 	eq3    <= sub_wire3;
-	eq5    <= sub_wire4;
-	eq6    <= sub_wire5;
+	eq7    <= sub_wire4;
+	eq8    <= sub_wire5;
 
 	lpm_decode_component : lpm_decode
 	GENERIC MAP (
@@ -124,10 +124,10 @@ END SYN;
 -- Retrieval info: PRIVATE: eq2 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq3 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq4 NUMERIC "0"
--- Retrieval info: PRIVATE: eq5 NUMERIC "1"
--- Retrieval info: PRIVATE: eq6 NUMERIC "1"
--- Retrieval info: PRIVATE: eq7 NUMERIC "0"
--- Retrieval info: PRIVATE: eq8 NUMERIC "0"
+-- Retrieval info: PRIVATE: eq5 NUMERIC "0"
+-- Retrieval info: PRIVATE: eq6 NUMERIC "0"
+-- Retrieval info: PRIVATE: eq7 NUMERIC "1"
+-- Retrieval info: PRIVATE: eq8 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq9 NUMERIC "0"
 -- Retrieval info: PRIVATE: nBit NUMERIC "4"
 -- Retrieval info: CONSTANT: LPM_DECODES NUMERIC "16"
@@ -138,14 +138,14 @@ END SYN;
 -- Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
 -- Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL eq2
 -- Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
--- Retrieval info: USED_PORT: eq5 0 0 0 0 OUTPUT NODEFVAL eq5
--- Retrieval info: USED_PORT: eq6 0 0 0 0 OUTPUT NODEFVAL eq6
+-- Retrieval info: USED_PORT: eq7 0 0 0 0 OUTPUT NODEFVAL eq7
+-- Retrieval info: USED_PORT: eq8 0 0 0 0 OUTPUT NODEFVAL eq8
 -- Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
 -- Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 -- Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2
 -- Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3
--- Retrieval info: CONNECT: eq5 0 0 0 0 @eq 0 0 1 5
--- Retrieval info: CONNECT: eq6 0 0 0 0 @eq 0 0 1 6
+-- Retrieval info: CONNECT: eq7 0 0 0 0 @eq 0 0 1 7
+-- Retrieval info: CONNECT: eq8 0 0 0 0 @eq 0 0 1 8
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode9.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode9.inc FALSE

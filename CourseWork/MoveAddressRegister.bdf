@@ -54,23 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 656 128 824 144)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Hit" (rect 5 0 19 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 656 144 856 160)
+	(rect 656 128 856 144)
 	(text "INPUT" (rect 165 0 193 10)(font "Arial" (font_size 6)))
 	(text "ParsingAddress[2..0]" (rect 5 0 107 12)(font "Arial" ))
 	(pt 200 8)
@@ -118,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 160 854 176)
+	(rect 656 144 854 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "CacheAddress[13..0]" (rect 90 0 193 12)(font "Arial" ))
 	(pt 0 8)
@@ -134,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 176 858 192)
+	(rect 656 160 858 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "RegisterAddress[2..0]" (rect 90 0 197 12)(font "Arial" ))
 	(pt 0 8)
@@ -150,7 +134,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 192 832 208)
+	(rect 656 176 832 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "CacheClock" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
@@ -166,7 +150,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 208 832 224)
+	(rect 656 192 832 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "End" (rect 90 0 108 12)(font "Arial" ))
 	(pt 0 8)
@@ -182,7 +166,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 224 832 240)
+	(rect 656 208 832 224)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Write" (rect 90 0 115 12)(font "Arial" ))
 	(pt 0 8)

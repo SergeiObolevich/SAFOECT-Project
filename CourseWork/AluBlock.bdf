@@ -821,18 +821,6 @@ applicable agreement for further details.
 	(pt 776 616)
 )
 (connector
-	(text "Data1[8..0]" (rect 394 544 449 556)(font "Arial" ))
-	(pt 384 560)
-	(pt 448 560)
-	(bus)
-)
-(connector
-	(text "Data2[2..0]" (rect 394 560 449 572)(font "Arial" ))
-	(pt 384 576)
-	(pt 448 576)
-	(bus)
-)
-(connector
 	(pt 640 560)
 	(pt 640 520)
 )
@@ -850,6 +838,18 @@ applicable agreement for further details.
 	(text "result[8..0]" (rect 650 544 703 556)(font "Arial" ))
 	(pt 640 560)
 	(pt 736 560)
+	(bus)
+)
+(connector
+	(text "Data2[8..0]" (rect 394 544 449 556)(font "Arial" ))
+	(pt 384 560)
+	(pt 448 560)
+	(bus)
+)
+(connector
+	(text "Data1[2..0]" (rect 394 560 449 572)(font "Arial" ))
+	(pt 384 576)
+	(pt 448 576)
 	(bus)
 )
 (junction (pt 832 296))

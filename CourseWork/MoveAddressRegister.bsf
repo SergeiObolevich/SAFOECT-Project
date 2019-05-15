@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 312 176)
+	(rect 16 16 312 144)
 	(text "MoveAddressRegister" (rect 5 0 132 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -54,16 +54,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "Hit" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "Hit" (rect 21 91 35 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 1))
-	)
-	(port
-		(pt 0 112)
-		(input)
 		(text "ParsingAddress[2..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
-		(text "ParsingAddress[2..0]" (rect 21 107 141 121)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
+		(text "ParsingAddress[2..0]" (rect 21 91 141 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
 		(pt 296 32)
@@ -101,6 +94,6 @@ applicable agreement for further details.
 		(line (pt 296 96)(pt 280 96)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 280 144)(line_width 1))
+		(rectangle (rect 16 16 280 112)(line_width 1))
 	)
 )
